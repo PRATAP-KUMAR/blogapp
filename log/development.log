@@ -375,3 +375,459 @@ FOREIGN KEY ("posts_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 16:56:40.947808"], ["updated_at", "2022-11-23 16:56:40.947808"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lilly"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Poland."], ["postcounter", nil], ["created_at", "2022-11-23 16:57:19.360117"], ["updated_at", "2022-11-23 16:57:19.360117"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 17:14:44.131815"], ["updated_at", "2022-11-23 17:14:44.131815"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 17:27:14.499428"], ["updated_at", "2022-11-23 17:27:14.499428"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:06:09.249199"], ["updated_at", "2022-11-23 20:06:09.249199"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:07:41.229547"], ["updated_at", "2022-11-23 20:07:41.229547"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:08:13.960911"], ["updated_at", "2022-11-23 20:08:13.960911"]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (3.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:08:16.235274"], ["updated_at", "2022-11-23 20:08:16.235274"], ["author_id", 8]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:09:15.349105"], ["updated_at", "2022-11-23 20:09:15.349105"], ["author_id", 8]]
+  [1m[36mTRANSACTION (39.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:09:42.384839"], ["updated_at", "2022-11-23 20:09:42.384839"], ["author_id", 8]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:09:56.254713"], ["updated_at", "2022-11-23 20:09:56.254713"], ["author_id", 8]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:12:47.934554"], ["updated_at", "2022-11-23 20:12:47.934554"]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (2.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:12:59.908903"], ["updated_at", "2022-11-23 20:12:59.908903"], ["author_id", 9]]
+  [1m[36mTRANSACTION (39.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:13:04.958774"], ["updated_at", "2022-11-23 20:13:04.958774"], ["author_id", 9]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:13:10.289477"], ["updated_at", "2022-11-23 20:13:10.289477"], ["author_id", 9]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:13:23.771876"], ["updated_at", "2022-11-23 20:13:23.771876"], ["author_id", 9]]
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:15:10.970253"], ["updated_at", "2022-11-23 20:15:10.970253"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:15:16.484844"], ["updated_at", "2022-11-23 20:15:16.484844"], ["author_id", 10]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:15:19.911141"], ["updated_at", "2022-11-23 20:15:19.911141"], ["author_id", 10]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:15:24.730305"], ["updated_at", "2022-11-23 20:15:24.730305"], ["author_id", 10]]
+  [1m[36mTRANSACTION (39.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:15:30.137162"], ["updated_at", "2022-11-23 20:15:30.137162"], ["author_id", 10]]
+  [1m[36mTRANSACTION (38.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:27:41.226307"], ["updated_at", "2022-11-23 20:27:41.226307"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (2.4ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:27:51.838199"], ["updated_at", "2022-11-23 20:27:51.838199"], ["author_id", 11]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:27:51.986151"], ["updated_at", "2022-11-23 20:27:51.986151"], ["author_id", 11]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:28:09.752111"], ["updated_at", "2022-11-23 20:28:09.752111"], ["author_id", 11]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:28:09.797790"], ["updated_at", "2022-11-23 20:28:09.797790"], ["author_id", 11]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:34:27.153273"], ["updated_at", "2022-11-23 20:34:27.153273"]]
+  [1m[36mTRANSACTION (39.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:34:27.340227"], ["updated_at", "2022-11-23 20:34:27.340227"], ["author_id", 12]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:34:27.457166"], ["updated_at", "2022-11-23 20:34:27.457166"], ["author_id", 12]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:34:27.513099"], ["updated_at", "2022-11-23 20:34:27.513099"], ["author_id", 12]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:34:27.549714"], ["updated_at", "2022-11-23 20:34:27.549714"], ["author_id", 12]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:35:56.885031"], ["updated_at", "2022-11-23 20:35:56.885031"]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:35:57.093983"], ["updated_at", "2022-11-23 20:35:57.093983"], ["author_id", 13]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:35:57.218784"], ["updated_at", "2022-11-23 20:35:57.218784"], ["author_id", 13]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:35:57.274892"], ["updated_at", "2022-11-23 20:35:57.274892"], ["author_id", 13]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:35:57.307588"], ["updated_at", "2022-11-23 20:35:57.307588"], ["author_id", 13]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:42:00.465602"], ["updated_at", "2022-11-23 20:42:00.465602"]]
+  [1m[36mTRANSACTION (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:42:00.680245"], ["updated_at", "2022-11-23 20:42:00.680245"], ["author_id", 14]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:42:00.793240"], ["updated_at", "2022-11-23 20:42:00.793240"], ["author_id", 14]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:42:02.649707"], ["updated_at", "2022-11-23 20:42:02.649707"], ["author_id", 14]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:42:02.666847"], ["updated_at", "2022-11-23 20:42:02.666847"], ["author_id", 14]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:46:28.455171"], ["updated_at", "2022-11-23 20:46:28.455171"]]
+  [1m[36mTRANSACTION (39.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:46:28.640411"], ["updated_at", "2022-11-23 20:46:28.640411"], ["author_id", 15]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:46:28.742222"], ["updated_at", "2022-11-23 20:46:28.742222"], ["author_id", 15]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:46:28.785261"], ["updated_at", "2022-11-23 20:46:28.785261"], ["author_id", 15]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:46:28.813248"], ["updated_at", "2022-11-23 20:46:28.813248"], ["author_id", 15]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (13.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 20:46:58.035711"], ["updated_at", "2022-11-23 20:46:58.035711"], ["author_id", 15], ["posts_id", 29]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:49:19.146922"], ["updated_at", "2022-11-23 20:49:19.146922"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:19.314553"], ["updated_at", "2022-11-23 20:49:19.314553"], ["author_id", 16]]
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:19.426171"], ["updated_at", "2022-11-23 20:49:19.426171"], ["author_id", 16]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:19.461342"], ["updated_at", "2022-11-23 20:49:19.461342"], ["author_id", 16]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:19.497694"], ["updated_at", "2022-11-23 20:49:19.497694"], ["author_id", 16]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:49:59.610387"], ["updated_at", "2022-11-23 20:49:59.610387"]]
+  [1m[36mTRANSACTION (39.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:59.804156"], ["updated_at", "2022-11-23 20:49:59.804156"], ["author_id", 17]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:59.907828"], ["updated_at", "2022-11-23 20:49:59.907828"], ["author_id", 17]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:59.952237"], ["updated_at", "2022-11-23 20:49:59.952237"], ["author_id", 17]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (2.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:49:59.978903"], ["updated_at", "2022-11-23 20:49:59.978903"], ["author_id", 17]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (1.5ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 20:50:09.110856"], ["updated_at", "2022-11-23 20:50:09.110856"], ["author_id", 17], ["posts_id", 37]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:52:46.756742"], ["updated_at", "2022-11-23 20:52:46.756742"]]
+  [1m[36mTRANSACTION (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:52:46.912396"], ["updated_at", "2022-11-23 20:52:46.912396"], ["author_id", 18]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:52:47.022325"], ["updated_at", "2022-11-23 20:52:47.022325"], ["author_id", 18]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:52:47.067895"], ["updated_at", "2022-11-23 20:52:47.067895"], ["author_id", 18]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:52:47.088868"], ["updated_at", "2022-11-23 20:52:47.088868"], ["author_id", 18]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 20:52:47.182602"], ["updated_at", "2022-11-23 20:52:47.182602"], ["author_id", 18], ["posts_id", 41]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 20:52:47.222326"], ["updated_at", "2022-11-23 20:52:47.222326"], ["author_id", 18], ["posts_id", 41]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 20:52:47.253788"], ["updated_at", "2022-11-23 20:52:47.253788"], ["author_id", 18], ["posts_id", 41]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 20:52:47.290058"], ["updated_at", "2022-11-23 20:52:47.290058"], ["author_id", 18], ["posts_id", 41]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 20:52:49.273241"], ["updated_at", "2022-11-23 20:52:49.273241"], ["author_id", 18], ["posts_id", 41]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 20:52:49.279014"], ["updated_at", "2022-11-23 20:52:49.279014"], ["author_id", 18], ["posts_id", 41]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 20:55:11.309593"], ["updated_at", "2022-11-23 20:55:11.309593"]]
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:55:11.489715"], ["updated_at", "2022-11-23 20:55:11.489715"], ["author_id", 19]]
+  [1m[36mTRANSACTION (11.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:55:11.596416"], ["updated_at", "2022-11-23 20:55:11.596416"], ["author_id", 19]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:55:11.633927"], ["updated_at", "2022-11-23 20:55:11.633927"], ["author_id", 19]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 20:55:11.655885"], ["updated_at", "2022-11-23 20:55:11.655885"], ["author_id", 19]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 20:55:11.754722"], ["updated_at", "2022-11-23 20:55:11.754722"], ["author_id", 19], ["posts_id", 45]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 20:55:11.822282"], ["updated_at", "2022-11-23 20:55:11.822282"], ["author_id", 19], ["posts_id", 45]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 20:55:11.852489"], ["updated_at", "2022-11-23 20:55:11.852489"], ["author_id", 19], ["posts_id", 45]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 20:55:11.888160"], ["updated_at", "2022-11-23 20:55:11.888160"], ["author_id", 19], ["posts_id", 45]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 20:55:12.671552"], ["updated_at", "2022-11-23 20:55:12.671552"], ["author_id", 19], ["posts_id", 45]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 20:55:12.688414"], ["updated_at", "2022-11-23 20:55:12.688414"], ["author_id", 19], ["posts_id", 45]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "test"], ["photo", "xyz"], ["bio", "test"], ["postcounter", nil], ["created_at", "2022-11-23 20:57:36.340058"], ["updated_at", "2022-11-23 20:57:36.340058"]]
+  [1m[36mTRANSACTION (39.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."bio" = $1 LIMIT $2[0m  [["bio", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 21:00:02.147008"], ["updated_at", "2022-11-23 21:00:02.147008"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:00:02.318240"], ["updated_at", "2022-11-23 21:00:02.318240"], ["author_id", 21]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:00:02.473288"], ["updated_at", "2022-11-23 21:00:02.473288"], ["author_id", 21]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:00:02.527287"], ["updated_at", "2022-11-23 21:00:02.527287"], ["author_id", 21]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:00:02.549084"], ["updated_at", "2022-11-23 21:00:02.549084"], ["author_id", 21]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 21:00:02.648638"], ["updated_at", "2022-11-23 21:00:02.648638"], ["author_id", 21], ["posts_id", 49]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 21:00:02.714512"], ["updated_at", "2022-11-23 21:00:02.714512"], ["author_id", 21], ["posts_id", 49]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 21:00:02.744464"], ["updated_at", "2022-11-23 21:00:02.744464"], ["author_id", 21], ["posts_id", 49]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 21:00:02.781130"], ["updated_at", "2022-11-23 21:00:02.781130"], ["author_id", 21], ["posts_id", 49]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 21:00:03.874279"], ["updated_at", "2022-11-23 21:00:03.874279"], ["author_id", 21], ["posts_id", 49]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 21:00:03.890404"], ["updated_at", "2022-11-23 21:00:03.890404"], ["author_id", 21], ["posts_id", 49]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Count (38.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 21:06:54.427367"], ["updated_at", "2022-11-23 21:06:54.427367"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:06:54.599744"], ["updated_at", "2022-11-23 21:06:54.599744"], ["author_id", 22]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:06:54.738434"], ["updated_at", "2022-11-23 21:06:54.738434"], ["author_id", 22]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:06:54.799154"], ["updated_at", "2022-11-23 21:06:54.799154"], ["author_id", 22]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:06:54.850699"], ["updated_at", "2022-11-23 21:06:54.850699"], ["author_id", 22]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 21:06:54.939737"], ["updated_at", "2022-11-23 21:06:54.939737"], ["author_id", 22], ["posts_id", 53]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 21:06:54.976933"], ["updated_at", "2022-11-23 21:06:54.976933"], ["author_id", 22], ["posts_id", 53]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 21:06:55.007486"], ["updated_at", "2022-11-23 21:06:55.007486"], ["author_id", 22], ["posts_id", 53]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 21:06:55.043543"], ["updated_at", "2022-11-23 21:06:55.043543"], ["author_id", 22], ["posts_id", 53]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 21:06:55.778504"], ["updated_at", "2022-11-23 21:06:55.778504"], ["author_id", 22], ["posts_id", 53]]
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 21:06:55.794474"], ["updated_at", "2022-11-23 21:06:55.794474"], ["author_id", 22], ["posts_id", 53]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 21:07:48.674001"], ["updated_at", "2022-11-23 21:07:48.674001"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:07:48.852983"], ["updated_at", "2022-11-23 21:07:48.852983"], ["author_id", 23]]
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:07:48.959034"], ["updated_at", "2022-11-23 21:07:48.959034"], ["author_id", 23]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:07:49.005355"], ["updated_at", "2022-11-23 21:07:49.005355"], ["author_id", 23]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:07:49.026303"], ["updated_at", "2022-11-23 21:07:49.026303"], ["author_id", 23]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 21:07:49.121384"], ["updated_at", "2022-11-23 21:07:49.121384"], ["author_id", 23], ["posts_id", 57]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 21:07:49.160364"], ["updated_at", "2022-11-23 21:07:49.160364"], ["author_id", 23], ["posts_id", 57]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 21:07:49.191392"], ["updated_at", "2022-11-23 21:07:49.191392"], ["author_id", 23], ["posts_id", 57]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 21:07:49.227174"], ["updated_at", "2022-11-23 21:07:49.227174"], ["author_id", 23], ["posts_id", 57]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 21:07:50.089252"], ["updated_at", "2022-11-23 21:07:50.089252"], ["author_id", 23], ["posts_id", 57]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 21:07:50.105349"], ["updated_at", "2022-11-23 21:07:50.105349"], ["author_id", 23], ["posts_id", 57]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 21:17:25.607388"], ["updated_at", "2022-11-23 21:17:25.607388"]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:17:25.709273"], ["updated_at", "2022-11-23 21:17:25.709273"], ["author_id", 24]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:17:25.754490"], ["updated_at", "2022-11-23 21:17:25.754490"], ["author_id", 24]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:17:25.795343"], ["updated_at", "2022-11-23 21:17:25.795343"], ["author_id", 24]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:17:25.826028"], ["updated_at", "2022-11-23 21:17:25.826028"], ["author_id", 24]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 21:17:25.907732"], ["updated_at", "2022-11-23 21:17:25.907732"], ["author_id", 24], ["posts_id", 61]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 21:17:25.944251"], ["updated_at", "2022-11-23 21:17:25.944251"], ["author_id", 24], ["posts_id", 61]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 21:17:25.974216"], ["updated_at", "2022-11-23 21:17:25.974216"], ["author_id", 24], ["posts_id", 61]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 21:17:26.004755"], ["updated_at", "2022-11-23 21:17:26.004755"], ["author_id", 24], ["posts_id", 61]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 21:17:27.046977"], ["updated_at", "2022-11-23 21:17:27.046977"], ["author_id", 24], ["posts_id", 61]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 21:17:27.061891"], ["updated_at", "2022-11-23 21:17:27.061891"], ["author_id", 24], ["posts_id", 61]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "postcounter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["postcounter", nil], ["created_at", "2022-11-23 21:21:15.762273"], ["updated_at", "2022-11-23 21:21:15.762273"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my first post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:21:15.970265"], ["updated_at", "2022-11-23 21:21:15.970265"], ["author_id", 25]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my second post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:21:16.038554"], ["updated_at", "2022-11-23 21:21:16.038554"], ["author_id", 25]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my third post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:21:16.077089"], ["updated_at", "2022-11-23 21:21:16.077089"], ["author_id", 25]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("authorid", "title", "text", "commentscounter", "likescounter", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["authorid", nil], ["title", "Hello"], ["text", "This is my fourth post"], ["commentscounter", nil], ["likescounter", nil], ["created_at", "2022-11-23 21:21:16.102893"], ["updated_at", "2022-11-23 21:21:16.102893"], ["author_id", 25]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (1.4ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my first comment"], ["created_at", "2022-11-23 21:21:16.180502"], ["updated_at", "2022-11-23 21:21:16.180502"], ["author_id", 25], ["posts_id", 65]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my second comment"], ["created_at", "2022-11-23 21:21:16.219519"], ["updated_at", "2022-11-23 21:21:16.219519"], ["author_id", 25], ["posts_id", 65]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my third comment"], ["created_at", "2022-11-23 21:21:16.256970"], ["updated_at", "2022-11-23 21:21:16.256970"], ["author_id", 25], ["posts_id", 65]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fourth comment"], ["created_at", "2022-11-23 21:21:16.296574"], ["updated_at", "2022-11-23 21:21:16.296574"], ["author_id", 25], ["posts_id", 65]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my fifth comment"], ["created_at", "2022-11-23 21:21:17.277591"], ["updated_at", "2022-11-23 21:21:17.277591"], ["author_id", 25], ["posts_id", 65]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("authorid", "postid", "text", "created_at", "updated_at", "author_id", "posts_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["authorid", nil], ["postid", nil], ["text", "This is my sixth comment"], ["created_at", "2022-11-23 21:21:17.294819"], ["updated_at", "2022-11-23 21:21:17.294819"], ["author_id", 25], ["posts_id", 65]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 LIMIT $2[0m  [["author_id", nil], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 LIMIT $2[0m  [["author_id", nil], ["LIMIT", 1]]
+  [1m[36mPost Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mUser Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m

@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
-    has_many: likes
-    belongs_to: user, post
+  belongs_to :posts, class_name: 'Post'
+  belongs_to :author, class_name: 'User'
 end
