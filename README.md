@@ -138,7 +138,7 @@ Not yet deployed
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 👤 **PRATAP PANABAKA**
 
