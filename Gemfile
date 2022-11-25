@@ -73,3 +73,7 @@ end
 
 # added my self
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+end
