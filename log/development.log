@@ -4783,3 +4783,102 @@ Started GET "/1" for ::1 at 2022-11-26 20:20:40 +0530
   
 ActionController::RoutingError (No route matches [GET] "/1"):
   
+Started GET "/users/1" for ::1 at 2022-11-28 12:09:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 444)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 37115)
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 41835)
+
+
+Started GET "/" for ::1 at 2022-11-28 12:09:17 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2644)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3101)
+
+
+Started GET "/users/1/posts" for ::1 at 2022-11-28 12:09:26 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2752)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3773)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:09:29 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2442)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2775)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:14:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 444)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 35492)
+Completed 200 OK in 59ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 41435)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:15:41 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 13798)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 14695)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:15:42 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2367)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+Started GET "/users/1" for ::1 at 2022-11-28 12:15:52 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2745)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3758)
+
+
+Started GET "/users" for ::1 at 2022-11-28 12:15:56 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2466)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2873)
+
+
+Started GET "/users" for ::1 at 2022-11-28 12:18:14 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 13818)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 14709)
+
+
