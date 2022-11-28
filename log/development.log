@@ -3935,3 +3935,950 @@ Migrating to CreateUsers (20221125055757)
   [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(42787528897884960)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-11-26 12:15:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.2ms | Allocations: 729)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 6514)
+
+
+Started GET "/" for ::1 at 2022-11-26 14:46:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+Completed 406 Not Acceptable in 8ms (ActiveRecord: 0.0ms | Allocations: 3778)
+
+
+  
+ActionController::MissingExactTemplate (MainController#index is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-26 14:46:41 +0530
+Processing by MainController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 564)
+
+
+  
+ActionController::MissingExactTemplate (MainController#index is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-26 14:48:41 +0530
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 262.2ms | Allocations: 91915)
+Completed 200 OK in 265ms (Views: 264.4ms | ActiveRecord: 0.0ms | Allocations: 93174)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:13:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 444)
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | Allocations: 35557)
+Completed 200 OK in 67ms (Views: 60.5ms | ActiveRecord: 0.0ms | Allocations: 41498)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:15:42 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2979)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4170)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:17:24 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 395)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1511)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:17:29 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 388)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1402)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:17:44 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:17:49 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 14118)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 15270)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:20:10 +0530
+  
+SyntaxError (/home/admin/blogapp/config/routes.rb:9: syntax error, unexpected ':', expecting `end'
+  get "users/:id", to : "users/show"
+                      ^
+/home/admin/blogapp/config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:9: syntax error, unexpected ':', expecting `end'
+config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:9: syntax error, unexpected ':', expecting `end'
+config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:9: syntax error, unexpected ':', expecting `end'
+config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for ::1 at 2022-11-26 15:20:30 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:9:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2022-11-26 15:21:38 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 13890)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 14782)
+
+
+Started GET "/show" for ::1 at 2022-11-26 15:21:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/show" for ::1 at 2022-11-26 15:26:20 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/" for ::1 at 2022-11-26 15:26:24 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 13821)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 14712)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:26:26 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2363)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2693)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:27:14 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 13888)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 14780)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:27:16 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2354)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2684)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:27:16 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2351)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2665)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:27:18 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2351)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2665)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:27:19 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2369)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2683)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:28:12 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 22)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/users" for ::1 at 2022-11-26 15:28:52 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 13800)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 14691)
+
+
+Started GET "/users" for ::1 at 2022-11-26 15:29:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2022-11-26 15:29:57 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 13890)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 14782)
+
+
+Started GET "/users" for ::1 at 2022-11-26 15:30:04 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2354)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2684)
+
+
+Started GET "/users" for ::1 at 2022-11-26 15:30:35 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 13798)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 14689)
+
+
+Started GET "/users" for ::1 at 2022-11-26 15:30:36 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2378)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2708)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:30:40 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2351)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2665)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:30:42 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2348)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2662)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:31:55 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2941)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4094)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:31:56 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2360)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/users/1" for ::1 at 2022-11-26 15:32:00 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2450)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2765)
+
+
+Started GET "/users/1" for ::1 at 2022-11-26 15:32:02 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2342)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2656)
+
+
+Started GET "/users/5" for ::1 at 2022-11-26 15:32:07 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2351)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2665)
+
+
+Started GET "/users/5" for ::1 at 2022-11-26 15:36:58 +0530
+  
+SyntaxError (/home/admin/blogapp/config/routes.rb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+...et "users/:user_id/posts", to "posts#index"
+...                              ^
+):
+  
+config/routes.rb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/users/5" for ::1 at 2022-11-26 15:36:59 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users/5"):
+  
+Started GET "/users/5" for ::1 at 2022-11-26 15:37:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users/5"):
+  
+Started GET "/users/1" for ::1 at 2022-11-26 15:37:15 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/users/" for ::1 at 2022-11-26 15:37:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for ::1 at 2022-11-26 15:38:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2022-11-26 15:38:28 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 14214)
+Completed 200 OK in 33ms (Views: 29.5ms | Allocations: 15378)
+
+
+Started GET "/any" for ::1 at 2022-11-26 15:38:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/any"):
+  
+Started GET "/23" for ::1 at 2022-11-26 15:38:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/23"):
+  
+Started GET "/1" for ::1 at 2022-11-26 15:38:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+Started GET "/" for ::1 at 2022-11-26 15:40:12 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 13857)
+Completed 200 OK in 19ms (Views: 18.4ms | Allocations: 14738)
+
+
+Started GET "/2" for ::1 at 2022-11-26 15:40:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/2"):
+  
+Started GET "/" for ::1 at 2022-11-26 15:40:21 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2369)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 2695)
+
+
+Started GET "/users/1" for ::1 at 2022-11-26 15:40:30 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2449)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 2760)
+
+
+Started GET "/users/1" for ::1 at 2022-11-26 15:40:51 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2360)
+Completed 200 OK in 8ms (Views: 6.3ms | Allocations: 2693)
+
+
+Started GET "/users/1/posts" for ::1 at 2022-11-26 15:40:57 +0530
+  
+ActionController::RoutingError (uninitialized constant PostsController):
+  
+Started GET "/users/1" for ::1 at 2022-11-26 15:41:17 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2382)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 2694)
+
+
+Started GET "/users/some/posts" for ::1 at 2022-11-26 15:41:22 +0530
+  
+ActionController::RoutingError (uninitialized constant PostsController):
+  
+Started GET "/users/1/posts" for ::1 at 2022-11-26 15:41:28 +0530
+  
+ActionController::RoutingError (uninitialized constant PostsController):
+  
+Started GET "/users/1/posts" for ::1 at 2022-11-26 15:44:31 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 14011)
+Completed 200 OK in 21ms (Views: 19.8ms | Allocations: 15022)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-26 15:44:47 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2433)
+Completed 200 OK in 6ms (Views: 4.8ms | Allocations: 2759)
+
+
+Started GET "/" for ::1 at 2022-11-26 15:51:00 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2660)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3536)
+
+
+Started GET "/users/745/posts" for ::1 at 2022-11-26 15:51:59 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"745"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2360)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 2687)
+
+
+Started GET "/users/745/posts/3" for ::1 at 2022-11-26 15:52:37 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"745", "id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2363)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 2674)
+
+
+Started GET "/" for ::1 at 2022-11-26 16:05:59 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 445)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 35352)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 41293)
+
+
+Started GET "/" for ::1 at 2022-11-26 17:25:44 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 445)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 35597)
+Completed 200 OK in 66ms (Views: 52.6ms | ActiveRecord: 0.0ms | Allocations: 41573)
+
+
+Started GET "/" for ::1 at 2022-11-26 17:36:57 +0530
+  
+NoMethodError (undefined method `users' for #<ActionDispatch::Routing::Mapper:0x00007f51d8732068 @set=#<ActionDispatch::Routing::RouteSet:0x00007f51e89b2eb8>, @draw_paths=[#<Pathname:/home/admin/blogapp/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f51d8731c08 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00007f51e8b02020 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:13:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2022-11-26 18:14:36 +0530
+  
+NoMethodError (undefined method `users' for #<ActionDispatch::Routing::Mapper:0x00007f51d8e57f78 @set=#<ActionDispatch::Routing::RouteSet:0x00007f51e89b2eb8>, @draw_paths=[#<Pathname:/home/admin/blogapp/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f51d8e57f28 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00007f51e8b02020 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:13:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2022-11-26 18:14:37 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 13906)
+Completed 200 OK in 21ms (Views: 20.5ms | Allocations: 14795)
+
+
+Started GET "/" for ::1 at 2022-11-26 18:14:39 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2375)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 2702)
+
+
+Started GET "/" for ::1 at 2022-11-26 18:16:40 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 13892)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 14773)
+
+
+Started GET "/" for ::1 at 2022-11-26 18:17:30 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 392)
+Completed 200 OK in 5ms (Views: 3.2ms | Allocations: 1425)
+
+
+Started GET "/" for ::1 at 2022-11-26 18:17:31 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 388)
+Completed 200 OK in 4ms (Views: 3.2ms | Allocations: 1392)
+
+
+Started GET "/" for ::1 at 2022-11-26 18:17:31 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 294)
+
+
+Started GET "/" for ::1 at 2022-11-26 18:17:33 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 272)
+
+
+Started GET "/users" for ::1 at 2022-11-26 18:17:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2022-11-26 18:18:02 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 14120)
+Completed 200 OK in 14ms (Views: 12.2ms | Allocations: 15260)
+
+
+Started GET "/users" for ::1 at 2022-11-26 18:18:03 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2351)
+Completed 200 OK in 3ms (Views: 2.8ms | Allocations: 2677)
+
+
+Started GET "/users/1" for ::1 at 2022-11-26 18:18:10 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2432)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 2744)
+
+
+Started GET "/" for ::1 at 2022-11-26 20:06:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 729)
+Completed 200 OK in 13ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 6513)
+
+
+Started GET "/pages/hello" for ::1 at 2022-11-26 20:06:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/pages/hello"):
+  
+Started GET "/" for ::1 at 2022-11-26 20:06:28 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 388)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1331)
+
+
+Started GET "/" for ::1 at 2022-11-26 20:06:29 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/admin/.local/share/gem/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/" for ::1 at 2022-11-26 20:12:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 445)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 35402)
+Completed 200 OK in 67ms (Views: 59.1ms | ActiveRecord: 0.0ms | Allocations: 41343)
+
+
+Started GET "/1" for ::1 at 2022-11-26 20:15:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+Started GET "/users/1" for ::1 at 2022-11-26 20:15:09 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2637)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2994)
+
+
+Started GET "/users/1/posts" for ::1 at 2022-11-26 20:15:25 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2760)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3774)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-26 20:15:30 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2469)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+Started GET "/users" for ::1 at 2022-11-26 20:17:13 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2360)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2676)
+
+
+Started GET "/users/1" for ::1 at 2022-11-26 20:17:36 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2375)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 2689)
+
+
+Started GET "/users/1/posts" for ::1 at 2022-11-26 20:17:42 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2376)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2694)
+
+
+Started GET "/1" for ::1 at 2022-11-26 20:20:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+Started GET "/users/1" for ::1 at 2022-11-28 12:09:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 444)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 37115)
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 41835)
+
+
+Started GET "/" for ::1 at 2022-11-28 12:09:17 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2644)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3101)
+
+
+Started GET "/users/1/posts" for ::1 at 2022-11-28 12:09:26 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2752)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3773)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:09:29 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2442)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2775)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:14:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 444)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 35492)
+Completed 200 OK in 59ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 41435)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:15:41 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 13798)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 14695)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-28 12:15:42 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2367)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+Started GET "/users/1" for ::1 at 2022-11-28 12:15:52 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2745)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3758)
+
+
+Started GET "/users" for ::1 at 2022-11-28 12:15:56 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2466)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2873)
+
+
+Started GET "/users" for ::1 at 2022-11-28 12:18:14 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 13818)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 14709)
+
+
