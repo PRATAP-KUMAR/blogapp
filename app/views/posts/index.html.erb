@@ -1,8 +1,10 @@
 <div class=box>
     <%= image_tag @user.photo, class: 'img' %>
     <div class=user-box>
-        <%= @user.name %><br>
-        number of posts: <%= @user.posts_counter %><br>
+        <h2><%= @user.name %></h2>
+        <div class=right>
+            number of posts: <%= @user.posts_counter %>
+        </div>
     </div>
 </div>
 
@@ -11,8 +13,10 @@
     <div class=rectangle>
         Post #<%= idx+1 %><br><br>
         <%= post.text %><br><br>
-        comments: <%= post.comments_counter %>
-        likes: <%= post.likes_counter %><br>
+        <div class=right>
+            comments: <%= post.comments_counter %>
+            likes: <%= post.likes_counter %><br>
+        </div>
     </div>
     <% end %>
 

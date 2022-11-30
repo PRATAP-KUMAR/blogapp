@@ -38,7 +38,6 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: auto;
   gap: 20px;
   border: 1px solid #121312;
   margin-bottom: 20px;
@@ -51,9 +50,10 @@ a:visited {
 }
 
 .user-box {
-  padding: 20px;
-  width: auto;
+  margin: 20px;
+  margin-left: auto;
   font-size: 30px;
+  width: 100%;
 }
 
 .show-all-posts {
@@ -73,4 +73,12 @@ a:visited {
 .flex {
   flex-direction: row;
   justify-content: space-between;
+}
+
+.user-box > h6 {
+  float: right;
+}
+
+.right {
+  float: right;
 }
