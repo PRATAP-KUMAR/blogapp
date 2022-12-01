@@ -1,1 +1,21 @@
-<h1>This page will show Post and its comments</h1>
+<div class=rectangle>
+    <div class=flex>
+        <div class=one>
+            Post #<%= @post.id %> by <%= @user.name %>
+        </div>
+        <div class=two>
+            Comments: <%= @post.comments_counter %>,
+            Likes: <%= @post.likes_counter %><br><br>
+        </div>
+    </div>
+    <%= @post.text %>
+</div>
+
+<% if @post.comments.length != 0 %>
+    <div class=rectangle>
+        <% @post.comments.each do |comment| %>
+            <%= comment.author.name %>:
+            <%= comment.text %><br>
+        <% end %>
+    </div>
+<% end %>

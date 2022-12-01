@@ -1,1 +1,25 @@
-<h1>This page will display user posts and etc</h1>
+    <div class>
+        <div class=box>
+            <%= image_tag @user.photo, class: 'img' %>
+            <div class=user-box>
+                <%= @user.name %><br>
+                number of posts: <%= @user.posts_counter %><br>
+            </div>
+        </div>
+    </div>
+
+    <div class=rectangle>
+        Bio<br><br>
+        <%= @user.bio %>
+    </div>
+
+    <% @posts.each_with_index do |post, idx| %>
+    <div class=rectangle>
+        Post #<%= idx+1 %><br><br>
+        <%= post.text %><br>
+    </div>
+    <% end %>
+
+    <div class="show-all-posts">
+    <%= link_to "See all posts", user_posts_path(user_id: @user.id), class: "shw-posts-btn" %>
+    </div>

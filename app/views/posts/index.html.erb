@@ -1,1 +1,30 @@
-<h1>This page will show a Single User's posts and show posts comments</h1>
+<div class=box>
+    <%= image_tag @user.photo, class: 'img' %>
+    <div class=user-box>
+        <h2><%= @user.name %></h2>
+        <div class=right>
+            number of posts: <%= @user.posts_counter %>
+        </div>
+    </div>
+</div>
+
+<% @posts_all.each_with_index do |post, idx| %>
+    <%= link_to user_post_path(user_id: @user.id, id: post.id) do %>
+    <div class=rectangle>
+        Post #<%= idx+1 %><br><br>
+        <%= post.text %><br><br>
+        <div class=right>
+            comments: <%= post.comments_counter %>
+            likes: <%= post.likes_counter %><br>
+        </div>
+    </div>
+    <% end %>
+
+    <% if post.comments.length != 0 %>
+    <div class=rectangle>
+        <% post.most_recent_comments.each do |comment| %>
+        <%= comment.author.name %>: <%= comment.text %><br><br>
+        <% end %>
+    </div>
+    <% end %>
+<% end %>
