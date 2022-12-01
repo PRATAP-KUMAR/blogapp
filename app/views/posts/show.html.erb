@@ -15,7 +15,7 @@
     <div class=rectangle>
         <% @post.comments.each do |comment| %>
             <%= comment.author.name %>:
-            <%= comment.text %><br>
+            <%= comment.text %><br><br>
         <% end %>
     </div>
 <% end %>

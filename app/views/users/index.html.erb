@@ -1,13 +1,13 @@
 <% @users.each do |user| %>
-    <%= link_to user do %>
+  <%= link_to user do %>
     <div class>
-        <div class=box>
-            <%= image_tag user.photo, class: 'img' %>
-            <div class=user-box>
-                <%= user.name %><br>
-                number of posts: <%= user.posts_counter %><br>
-            </div>
+      <div class=box>
+        <%= image_tag user.photo, class: 'img' %>
+        <div class=user-box>
+          <%= user.name %><br>
+          number of posts: <%= user.posts_counter %><br>
         </div>
+      </div>
     </div>
-    <% end %>
+  <% end %>
 <% end %>
