@@ -105,6 +105,11 @@ Example commands:
 ```
 --->
 
+### Database
+
+To create some data to check the blog app,
+use the commands in [this file](./create_databse.txt) 
+
 ### Install
 
 Install this project with:

@@ -1,0 +1,6 @@
+<h3><%= @user.name %>! you are making a comment</h3>
+
+<%= form_with model: @comment, url: user_post_comments_path, local: true do |f| %>
+    <%= f.text_area :text, size: "60x10" %><br>
+    <%= f.submit "Submit Comment" %>
+<% end %>
