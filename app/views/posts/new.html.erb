@@ -1,0 +1,9 @@
+<h3><%= @user.name %>! you are creating a new post</h3>
+
+<%= form_with model: @post, url: user_posts_path, local: true do |f| %>
+    <%= f.label :'Give some title to the post here' %>
+    <%= f.text_field :title %><br><br>
+    <%= f.label :"put your post's content here" %><br>
+    <%= f.text_area :text, size: "60x10" %><br>
+    <%= f.submit "Submit Post" %>
+<% end %>

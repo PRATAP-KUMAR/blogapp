@@ -1,21 +1,28 @@
 <div class=rectangle>
-    <div class=flex>
-        <div class=one>
-            Post #<%= @post.id %> by <%= @user.name %>
-        </div>
-        <div class=two>
-            Comments: <%= @post.comments_counter %>,
-            Likes: <%= @post.likes_counter %><br><br>
-        </div>
+  <div class=flex>
+    <div class=one>
+      Post #<%= @post.id %> by <%= @user.name %>
     </div>
-    <%= @post.text %>
+    <div class=two>
+      Comments: <%= @post.comments_counter %>,
+      Likes: <%= @post.likes_counter %><br>
+      <br>
+    </div>
+  </div>
+  <%= @post.text %>
 </div>
-
 <% if @post.comments.length != 0 %>
-    <div class=rectangle>
-        <% @post.comments.each do |comment| %>
-            <%= comment.author.name %>:
-            <%= comment.text %><br><br>
-        <% end %>
-    </div>
+  <div class=rectangle>
+    <% @post.comments.each do |comment| %>
+      <%= comment.author.name %>:
+      <%= comment.text %><br>
+      <br>
+    <% end %>
+  </div>
 <% end %>
+<button>
+  <%= link_to 'Add your comment', new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id) %>
+</button>
+<div class=right>
+  <%= render 'likes/form' %>
+</div>
