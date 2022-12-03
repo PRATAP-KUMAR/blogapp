@@ -61,7 +61,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Its a blog app, that displays user names and posts on a blog. It stores all user names and comments they made**
+- Its a blog app, that displays user names and posts on a blog. It stores all user names and comments they made
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,9 +157,9 @@ Not yet deployed
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Setup and controllers**
-- [ ] **Controllers specs**
-- [ ] **Creating a data model**
+- [ ] Setup and controllers
+- [ ] Controllers specs
+- [ ] Creating a data model
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
