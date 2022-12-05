@@ -143,7 +143,12 @@ Not yet deployed
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="authors"></a>
+
+👤 **Christian Iradukunda B.**
+
+- GitHub: [@githubhandle](https://github.com/Christianib003)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/christian-iradukunda/)
 
 👤 **PRATAP PANABAKA**
 
