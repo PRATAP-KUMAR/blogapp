@@ -22,7 +22,7 @@
   <% end %>
   <% unless post.comments.length == 0 %>
     <div class=rectangle>
-      <% post.most_recent_comments.each do |comment| %>
+      <% post.most_recent_comments.includes(:author).each do |comment| %>
         <%= comment.author.name %>: <%= comment.text %><br>
         <br>
       <% end %>
