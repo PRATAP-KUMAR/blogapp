@@ -81,3 +81,5 @@ end
 gem 'rails-controller-testing'
 
 gem 'htmlbeautifier'
+
+gem 'bullet'
