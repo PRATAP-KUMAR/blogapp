@@ -13,7 +13,7 @@
 </div>
 <% if @post.comments.length != 0 %>
   <div class=rectangle>
-    <% @post.comments.each do |comment| %>
+    <% @post.comments.includes(:author).each do |comment| %>
       <%= comment.author.name %>:
       <%= comment.text %><br>
       <br>
