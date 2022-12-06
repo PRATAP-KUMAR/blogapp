@@ -12,6 +12,9 @@ gem 'sprockets-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', '~> 1.4'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
@@ -49,8 +52,16 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  # The RSpec testing framework
+  gem 'rspec-rails'
+
+  # Capybara, the library that allows us to interact with the browser using Ruby
+  gem 'capybara'
+
+  # The following gems aids with the nuts and bolts
+  # of interacting with the browser.
+  gem 'database_cleaner'
+  gem 'webdrivers'
 end
 
 group :development do
@@ -64,22 +75,5 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
-end
-
-# added my self
-gem 'rubocop', '>= 1.0', '< 2.0'
-
-group :development, :test do
-  gem 'rspec-rails', '~> 6.0.0'
-end
-
-gem 'rails-controller-testing'
-
-gem 'htmlbeautifier'
-
 gem 'bullet'
+gem 'digest'

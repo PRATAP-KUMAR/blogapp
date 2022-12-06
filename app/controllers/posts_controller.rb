@@ -4,8 +4,8 @@ class PostsController < ApplicationController
     @posts_all = @user.posts.includes(:comments)
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @posts }
+      format.html
+      format.xml { render xml: @posts }
     end
   end
 
