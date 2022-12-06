@@ -70,14 +70,12 @@ RSpec.describe 'User Show Page', type: :system do
 
     it 'tests for When I click a users post, it redirects me to that post' do
       visit user_path('1')
-      sleep(6)
       click_on('Most recent post_1')
       expect(page).to have_current_path('/users/1/posts/3')
     end
 
     it 'tests for When I click a users post, it redirects me to that post' do
       visit user_path('1')
-      sleep(6)
       click_on('See all posts')
       expect(page).to have_current_path('/users/1/posts')
     end

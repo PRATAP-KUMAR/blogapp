@@ -15,26 +15,22 @@ RSpec.describe 'All Users', type: :system do
   describe 'User Index page', js: true do
     it 'I can see the username of all other users' do
       visit users_path(subject)
-      sleep(2)
       page.has_content?(User.name)
     end
 
     it 'checks for user profile pic' do
       visit users_path(subject)
-      sleep(2)
       page.has_content?('Screenshot Image')
       expect(page).to have_css('img')
     end
 
     it 'I can see the number of posts each user has written.' do
       visit users_path(subject)
-      sleep(2)
       page.has_content?('number of posts: 0')
     end
 
     it "When I click on a user, I am redirected to that user's show page" do
       visit users_path(subject)
-      sleep(2)
       expect(page).to have_current_path('/users.1')
     end
   end
