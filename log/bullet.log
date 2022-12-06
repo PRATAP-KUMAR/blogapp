@@ -1,0 +1,124 @@
+2022-12-05 16:05:33[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Post => [:comments]
+  Add to your query: .includes([:comments])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:23:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:05:33[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:08:42[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:08:50[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:09:22[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Post => [:comments]
+  Add to your query: .includes([:comments])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:23:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:09:22[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:09:22[WARN] user: admin
+GET /users/1/posts
+AVOID eager loading detected
+  Post => [:author]
+  Remove from your query: .includes([:author])
+Call stack
+
+2022-12-05 16:10:20[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:12:44[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:13:04[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:13:54[WARN] user: admin
+GET /users/1/posts
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/index.html.erb:26:in `block (2 levels) in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:25:in `block in _app_views_posts_index_html_erb__77078617483436390_25060'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `each_with_index'
+  /home/admin/blogapp/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__77078617483436390_25060'
+
+2022-12-05 16:19:23[WARN] user: admin
+GET /users/1/posts/1
+USE eager loading detected
+  Comment => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /home/admin/blogapp/app/views/posts/show.html.erb:17:in `block in _app_views_posts_show_html_erb__3960831964568296134_66500'
+  /home/admin/blogapp/app/views/posts/show.html.erb:16:in `_app_views_posts_show_html_erb__3960831964568296134_66500'
+

@@ -11,7 +11,8 @@ a:visited {
   color: black;
 }
 
-.rectangle {
+.rectangle,
+.bio {
   border: 1px solid #121312;
   margin-bottom: 20px;
   font-size: 20px;

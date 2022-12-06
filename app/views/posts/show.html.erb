@@ -3,6 +3,9 @@
     <div class=one>
       Post #<%= @post.id %> by <%= @user.name %>
     </div>
+
+    <h3><%= @post.title %></h3>
+
     <div class=two>
       Comments: <%= @post.comments_counter %>,
       Likes: <%= @post.likes_counter %><br>
@@ -13,7 +16,7 @@
 </div>
 <% if @post.comments.length != 0 %>
   <div class=rectangle>
-    <% @post.comments.each do |comment| %>
+    <% @post.comments.includes(:author).each do |comment| %>
       <%= comment.author.name %>:
       <%= comment.text %><br>
       <br>

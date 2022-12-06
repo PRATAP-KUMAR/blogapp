@@ -1,7 +1,12 @@
 class PostsController < ApplicationController
   def index
     @user = User.find_by(id: params[:user_id])
-    @posts_all = @user.posts
+    @posts_all = @user.posts.includes(:comments)
+
+    respond_to do |format|
+      format.html
+      format.xml { render xml: @posts }
+    end
   end
 
   def show

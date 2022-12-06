@@ -7,17 +7,19 @@
     </div>
   </div>
 </div>
-<div class=rectangle>
+<div class=bio>
   Bio<br>
   <br>
   <%= @user.bio %>
 </div>
 <% @posts.each_with_index do |post, idx| %>
+<%= link_to user_post_path(user_id: @user.id, id: post.id) do %>
   <div class=rectangle>
-    Post #<%= idx+1 %><br>
+    Most recent post_<%= idx+1 %><br>
     <br>
     <%= post.text %><br>
   </div>
+  <% end %>
 <% end %>
 <% unless @posts.length == 0 %>
   <div class="show-all-posts">
