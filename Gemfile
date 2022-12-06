@@ -76,6 +76,6 @@ group :development do
 end
 
 # added my self
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'bullet'
 gem 'digest'
+gem 'rubocop', '>= 1.0', '< 2.0'
