@@ -3,6 +3,9 @@
     <div class=one>
       Post #<%= @post.id %> by <%= @user.name %>
     </div>
+
+    <h3><%= @post.title %></h3>
+
     <div class=two>
       Comments: <%= @post.comments_counter %>,
       Likes: <%= @post.likes_counter %><br>
