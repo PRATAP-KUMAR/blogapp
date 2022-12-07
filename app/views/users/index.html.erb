@@ -2,7 +2,7 @@
   <%= link_to user do %>
     <div>
       <div class=box>
-        <%= image_tag user.photo, class: 'img' %>
+        <img src="<%= user.photo%>", class: 'img'>
         <div class=user-box>
           <%= user.name %><br>
           number of posts: <%= user.posts_counter %><br>
