@@ -104,3 +104,14 @@ a:visited {
   border-radius: 8px;
   margin: 40px 0 0 0;
 }
+
+.del-post {
+  background-color: cyan;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.del-comment {
+  background-color: orange;
+  float: right;
+}
