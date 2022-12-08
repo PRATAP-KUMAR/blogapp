@@ -77,6 +77,7 @@ end
 
 # added my self
 gem 'bullet'
+gem 'cancancan'
 gem 'devise'
 gem 'digest'
 gem 'letter_opener'
