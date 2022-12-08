@@ -75,6 +75,8 @@ a:visited {
   box-shadow: 6px 2px #0609b6;
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .form-holder {

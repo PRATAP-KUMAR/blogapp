@@ -9,10 +9,8 @@
         </div>
       </div>
     </div>
-    <% unless user.id != 1 %>
       <div class=create_post>
         <%= link_to "Create New Post", new_user_post_path(user) %>
       </div>
-    <% end %>
   <% end %>
 <% end %>
