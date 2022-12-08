@@ -16,6 +16,18 @@ class CommentsController < ApplicationController
     redirect_to user_posts_url
   end
 
+  def destroy
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.find(params[:id])
+    @comment.destroy
+    if @comment.destroy
+      @comment.update_comments_counter_when_deleted
+      redirect_to user_post_path(@post.author_id, @post.id)
+    else
+      render :new
+    end
+  end
+
   private
 
   def comment_params
