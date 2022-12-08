@@ -12,13 +12,13 @@
       <br>
     </div>
   </div>
+    <div class=posts-del-btn>
+    <% if can? :destroy, @post %>
+      <%= link_to 'Delete', user_post_path(user_id:@user.id, id: @post.id), "data-turbo-method": :delete, class: 'del-post' %>
+    <% end %>
+  </div>
   <%= @post.text %>
-</div>
 
-<div class=posts-del-btn>
-<% if can? :destroy, @post %>
-  <%= link_to 'Delete', user_post_path(user_id:@user.id, id: @post.id), "data-turbo-method": :delete %>
-<% end %>
 </div>
 
 <% if @post.comments.length != 0 %>
@@ -27,7 +27,7 @@
       <%= comment.author.name %>:
       <%= comment.text %><br>
     <% if can? :destroy, comment %>
-      <%= link_to 'Delete', user_post_comment_path(post_id: @post.id, id: comment.id), "data-turbo-method": :delete %>
+      <%= link_to 'Delete', user_post_comment_path(post_id: @post.id, id: comment.id), "data-turbo-method": :delete, class: 'del-comment' %>
       <br>
       <% end %>
     <% end %>

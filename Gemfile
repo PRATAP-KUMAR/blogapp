@@ -77,8 +77,8 @@ end
 
 # added my self
 gem 'bullet'
+gem 'cancancan'
 gem 'devise'
 gem 'digest'
 gem 'letter_opener'
 gem 'rubocop', '>= 1.0', '< 2.0'
-gem 'cancancan'

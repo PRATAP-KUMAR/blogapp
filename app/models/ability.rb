@@ -12,10 +12,10 @@ class Ability
       can :destroy, Comment do |comment|
         comment.author == user
       end
-        can :create, Post
-        can :create, Comment
-        can :create, Like
-        can :read, :all
+      can :create, Post
+      can :create, Comment
+      can :create, Like
+      can :read, :all
     end
   end
 end
