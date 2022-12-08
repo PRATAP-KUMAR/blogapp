@@ -76,3 +76,29 @@ a:visited {
   text-align: center;
   margin: 0 auto;
 }
+
+.form-holder {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0 0 0;
+  text-align: center;
+  height: 100vh;
+}
+
+.field {
+  margin: 40px 0 0 0;
+}
+
+.area {
+  width: 80%;
+  height: 50px;
+  padding: 0 2% 0 2%;
+  border-radius: 8px;
+}
+
+.sign-up {
+  width: 80%;
+  height: 50px;
+  border-radius: 8px;
+  margin: 40px 0 0 0;
+}
