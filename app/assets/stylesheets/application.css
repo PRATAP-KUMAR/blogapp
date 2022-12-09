@@ -11,6 +11,11 @@ a:visited {
   color: black;
 }
 
+.title {
+  font-size: 50px;
+  text-align: center;
+}
+
 .rectangle,
 .bio {
   border: 1px solid #121312;
@@ -90,13 +95,6 @@ a:visited {
   margin: 40px 0 0 0;
 }
 
-.area {
-  width: 80%;
-  height: 50px;
-  padding: 0 2% 0 2%;
-  border-radius: 8px;
-}
-
 .sign-up {
   width: 80%;
   height: 50px;
@@ -113,4 +111,38 @@ a:visited {
 .del-comment {
   background-color: orange;
   float: right;
+}
+
+.default {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.default > :any-link {
+  color: blue;
+}
+
+.default > :any-link:hover {
+  color: orange;
+}
+
+.area {
+  width: 80%;
+  height: 50px;
+  padding: 0 2% 0 2%;
+  border-radius: 8px;
+}
+
+.login-btn {
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+  color: blue;
+  border-radius: 8px;
+}
+
+.login-btn:hover {
+  color: orange;
 }

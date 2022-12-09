@@ -8,11 +8,11 @@ class Api::V1::CommentsController < Api::V1::ApiController
   def show; end
 
   def create
-    author_id = @current_user.id,
-                text = params[:text],
-                post_id = params[:post_id]
+    author_id = @current_user.id
+    text = params[:text]
+    post_id = params[:post_id]
     if author_id && text && post_id
-      comment = Comment.new(author_id, text, post_id)
+      comment = Comment.new(author_id: author_id, text: text, post_id: post_id)
       if comment.save
         render json: { status: 'SUCCESS', message: 'Comment Has Been Created', data: comment }, status: :ok
       else

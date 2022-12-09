@@ -1,3 +1,7 @@
+<div class=title>
+  <h3>Welcome to Blog App</h3>
+</div>
+
 <div class=form-holder>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -9,7 +13,7 @@
   </div>
 
   <div class="field">
-    <%= f.submit "Log in", class: "area" %>
+    <%= f.submit "Log in", class: 'login-btn' %>
   </div>
 <% end %>
 
