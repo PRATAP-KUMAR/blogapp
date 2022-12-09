@@ -7,4 +7,14 @@ Rails.application.routes.draw do
     end
   end
   root to: "users#index"
+
+  namespace :api do
+    namespace :v1 do
+      resources :users do
+        resources :posts do
+          resources :comments
+        end
+      end
+    end
+  end
 end
