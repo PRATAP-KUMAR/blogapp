@@ -7,4 +7,16 @@ Rails.application.routes.draw do
     end
   end
   root to: "users#index"
+
+  namespace :api do
+    namespace :v1 do
+      post :login, to: "authentication#login"
+      post :register, to: "register#register"
+      resources :users do
+        resources :posts do
+          resources :comments
+        end
+      end
+    end
+  end
 end

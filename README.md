@@ -73,6 +73,22 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 API Endpoints
+````
+POST   /api/v1/register
+POST   /api/v1/login            
+GET    /api/v1/users/:user_id/posts/:post_id/comments                                      
+POST   /api/v1/users/:user_id/posts/:post_id/comments
+GET    /api/v1/users/:user_id/posts/:post_id/comments/:id
+GET    /api/v1/users/:user_id/posts
+POST   /api/v1/users/:user_id/posts
+GET    /api/v1/users/:user_id/posts/new
+GET    /api/v1/users/:user_id/posts/:id
+GET    /api/v1/users
+POST    /api/v1/users
+GET    /api/v1/users/:id
+````
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
