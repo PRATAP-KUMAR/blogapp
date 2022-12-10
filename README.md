@@ -89,6 +89,10 @@ POST    /api/v1/users
 GET    /api/v1/users/:id
 ````
 
+## 🚀 API Documentation
+![image](https://user-images.githubusercontent.com/40719899/206862337-010f9403-8887-4601-b01c-9bac7b5a741a.png)
+
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
