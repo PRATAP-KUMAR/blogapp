@@ -10,9 +10,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      post :auth, to: "authentication#login"
+      post :login, to: "authentication#login"
+      post :register, to: "register#register"
       resources :users do
-        post :create, to: "users#create"
         resources :posts do
           resources :comments
         end
