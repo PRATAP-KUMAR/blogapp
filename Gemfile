@@ -83,3 +83,5 @@ gem 'digest'
 gem 'jwt'
 gem 'letter_opener'
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'rswag'

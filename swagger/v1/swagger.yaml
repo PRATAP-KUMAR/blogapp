@@ -1,0 +1,88 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/users":
+    post:
+      summary: Create a user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '201':
+          description: user created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                bio:
+                  type: string
+                photo:
+                  type: string
+                password:
+                  type: string
+                post_counter:
+                  type: integer
+                role:
+                  type: string
+              required:
+              - name
+              - email
+              - bio
+              - photo
+              - password
+              - post_counter
+              - role
+  "/api/v1/users/":
+    get:
+      summary: Retrieves The List of Users
+      tags:
+      - Users
+      responses:
+        '200':
+          description: list of users
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  email:
+                    type: string
+                  bio:
+                    type: string
+                  photo:
+                    type: string
+                  password:
+                    type: string
+                  post_counter:
+                    type: integer
+                  role:
+                    type: string
+                required:
+                - id
+                - name
+                - email
+                - bio
+                - photo
+                - password
+                - post_counter
+                - role
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

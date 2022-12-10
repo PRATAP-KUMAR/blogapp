@@ -55483,3 +55483,25 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 36ms (Views: 23.9ms | ActiveRecord: 5.6ms | Allocations: 16621)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:42:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms | Allocations: 2492)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-10 20:42:54 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 817)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2696)
+  Rendered layout layouts/application.html.erb (Duration: 120.9ms | Allocations: 49562)
+Completed 200 OK in 153ms (Views: 129.5ms | ActiveRecord: 7.5ms | Allocations: 62515)
+
+
+Started GET "/api-docs/index.html" for 127.0.0.1 at 2022-12-10 20:43:07 +0530
+Started GET "/api-docs/swagger-ui.css" for 127.0.0.1 at 2022-12-10 20:43:07 +0530
+Started GET "/api-docs/swagger-ui-bundle.js" for 127.0.0.1 at 2022-12-10 20:43:07 +0530
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for 127.0.0.1 at 2022-12-10 20:43:07 +0530
+Started GET "/api-docs/favicon-16x16.png" for 127.0.0.1 at 2022-12-10 20:43:07 +0530
+Started GET "/api-docs/v1/swagger.yaml" for 127.0.0.1 at 2022-12-10 20:43:07 +0530
