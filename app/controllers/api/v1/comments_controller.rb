@@ -1,26 +1,33 @@
 class Api::V1::CommentsController < Api::V1::ApiController
+  skip_before_action :authenticate_token!
+
   def index
     post_id = params[:post_id]
     @comments = Post.find(post_id).comments
-    render json: @comments, status: :ok
+
+    if @comments.empty?
+      render json: { status: 'ERROR', message: 'No Comments Found' }, status: :not_found
+    else
+      render json: @comments, status: :ok
+    end
   end
 
-  def show; end
-
   def create
-    author_id = @current_user.id
-    text = params[:text]
-    post_id = params[:post_id]
-    if author_id && text && post_id
-      comment = Comment.new(author_id: author_id, text: text, post_id: post_id)
-      if comment.save
-        render json: { status: 'SUCCESS', message: 'Comment Has Been Created', data: comment }, status: :ok
-      else
-        render json: { status: 'ERROR', message: 'Comment Has NOT Been Created', data: comment.errors },
-               status: :unprocessable_entity
-      end
+    @comment = Comment.create(
+      text: comment_params[:text],
+      author_id: params[:author_id],
+      post_id: params[:post_id]
+    )
+    if @comment.save
+      render json: @comment, status: :created
     else
-      render json: { status: 'ERROR', message: 'Invalid Prameters' }, status: :not_found
+      render json: { status: 'ERROR', message: 'Comment Not Created' }, status: :unprocessable_entity
     end
+  end
+
+  private
+
+  def comment_params
+    params.permit(:text)
   end
 end
