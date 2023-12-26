@@ -169,8 +169,8 @@ Not yet deployed
 👤 **PRATAP PANABAKA**
 
 - GitHub: [@githubhandle](https://github.com/PRATAP-KUMAR)
-- Twitter: [@twitterhandle](https://twitter.com/PRATAP_TWT)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pratap-kumar-panabaka)
+- Portfolio: [Portfolio](https://pratap.live)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
