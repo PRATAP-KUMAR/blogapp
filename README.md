@@ -65,12 +65,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Not applicable yet](https://loom.com)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 API Endpoints
@@ -85,7 +79,7 @@ POST   /api/v1/users/:user_id/posts
 GET    /api/v1/users/:user_id/posts/new
 GET    /api/v1/users/:user_id/posts/:id
 GET    /api/v1/users
-POST    /api/v1/users
+POST   /api/v1/users
 GET    /api/v1/users/:id
 ````
 
